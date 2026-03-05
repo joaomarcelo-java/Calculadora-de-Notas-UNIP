@@ -44,7 +44,7 @@
 
             <div class="config-item">
                 <label>Tipo</label>
-                <select id="tipo">
+                <select id="tipo" onclick="verificaTipoMateria()">
                     <option value="teorica">Teórica</option>
                     <option value="pratica">Prática</option>
                 </select>
@@ -53,11 +53,11 @@
         </div>
 
         <div class="inputs">
-            <input type="number" id="prova" placeholder="Prova">
-            <input type="number" id="pim" placeholder="PIM">
-            <input type="number" id="ava" placeholder="AVA">
-            <input type="number" id="relatorio" placeholder="Relatório">
-            <input type="number" id="exame" placeholder="Exame">
+            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="prova" placeholder="Prova">
+            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="pim" placeholder="PIM">
+            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="ava" placeholder="AVA">
+            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="relatorio" placeholder="Relatório">
+            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="exame" placeholder="Exame">
         </div>
 
         <button onclick="calcular()">Calcular</button>

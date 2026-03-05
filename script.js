@@ -10,6 +10,15 @@ themeBtn.addEventListener("click", () => {
     }
 });
 
+function verificaTipoMateria(){
+  let tipo = document.getElementById("tipo").value;
+  if(tipo === "teorica"){
+      document.getElementById("relatorio").disabled = true;
+  }else{
+      document.getElementById("relatorio").disabled = false;
+  }
+}
+
 function calcular() {
 
 let curriculo = document.getElementById("curriculo").value
