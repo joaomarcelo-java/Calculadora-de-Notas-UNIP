@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Notas</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+    <h1>Calculadora de Notas</h1>
+    <button class="theme-btn">🌙</button>
+</header>
+
+<main class="container">
+
+    <div class="calculator">
+
+        <h2>Calculadora de Média</h2>
+        <button class="help-link" onclick="irParaGuia()">Como eu cálculo?</button>
+        <div class="config">
+
+            <div class="config-item">
+                <label>Currículo</label>
+                <select id="curriculo">
+                    <option value="2022">Até 2022</option>
+                    <option value="2023">2023+</option>
+                </select>
+            </div>
+
+            <div class="config-item">
+                <label>Tipo</label>
+                <select id="tipo">
+                    <option value="teorica">Teórica</option>
+                    <option value="pratica">Prática</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="inputs">
+            <input type="number" id="prova" placeholder="Prova">
+            <input type="number" id="pim" placeholder="PIM">
+            <input type="number" id="ava" placeholder="AVA">
+            <input type="number" id="relatorio" placeholder="Relatório">
+            <input type="number" id="exame" placeholder="Exame">
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div class="result">
+
+            <div class="result-card">
+                <span class="result-label">Média da Disciplina:</span>
+                <span class="result-value" id="md">-</span>
+            </div>
+
+            <div class="result-card">
+                <span class="result-label">Média Final:</span>
+                <span class="result-value" id="mf">-</span>
+            </div>
+
+            <div class="result-status" id="situacao">
+                -
+            </div>
+
+        </div>
+
+    </div>
+</main>
+<section class="guia" id="guia">
+
+        <h2>Como funciona o cálculo?</h2>
+
+        <div class="guia-item">
+
+            <h3>Matéria Teórica</h3>
+            <p>
+                São matérias onde as aulas, são apenas online.
+            </p>
+            <P>
+                As matérias teóricas utilizam três componentes principais:
+            </P>
+
+            <ul>
+                <li><strong>Prova</strong> — avaliação principal da disciplina.</li>
+                <li><strong>PIM</strong> — projeto integrado da matéria.</li>
+                <li><strong>AVA</strong> — atividades online realizadas no ambiente virtual.</li>
+            </ul>
+
+            <p>
+                A soma dessas notas gera a <strong>Média da Disciplina (MD)</strong>.
+                Caso a média seja menor que o mínimo necessário, o aluno pode realizar o <strong>Exame</strong>.
+            </p>
+
+        </div>
+
+        <div class="guia-item">
+
+            <h3>Matéria Prática</h3>
+            <p>
+                São matérias onde existem aulas presenciais.
+            </p>
+            <p>
+                As matérias práticas possuem uma estrutura diferente:
+            </p>
+
+
+            <ul>
+                <li><strong>Prova</strong> — avaliação prática da disciplina.</li>
+                <li><strong>Relatório</strong> — atividade prática ou relatório técnico.</li>
+            </ul>
+
+            <p>
+                Essas notas também geram a <strong>Média da Disciplina</strong>. Caso necessário, o
+                <strong>Exame</strong> pode ser utilizado para calcular a <strong>Média Final (MF)</strong>.
+            </p>
+
+        </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
