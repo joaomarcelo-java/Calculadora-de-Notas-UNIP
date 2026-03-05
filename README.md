@@ -14,9 +14,6 @@ Acesse a calculadora online: [Calculadora de Notas UNIP](https://joaomarcelo-jav
 
 - ✅ **Cálculo automático** da Média da Disciplina (MD) e Média Final (MF)
 - ✅ **Suporte a dois currículos**: Até 2022 e 2023+
-- ✅ **Diferenciação entre matérias**:
-  - **Teóricas**: Prova + PIM + AVA
-  - **Práticas**: Prova + Relatório
 - ✅ **Arredondamento inteligente** conforme as regras da UNIP
 - ✅ **Cálculo com Exame** quando necessário
 - ✅ **Status de aprovação** com feedback visual colorido
