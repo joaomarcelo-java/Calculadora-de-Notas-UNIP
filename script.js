@@ -11,13 +11,20 @@ themeBtn.addEventListener("click", () => {
 });
 
 function verificaTipoMateria(){
-  let tipo = document.getElementById("tipo").value;
-  if(tipo === "teorica"){
-      document.getElementById("relatorio").disabled = true;
-  }else{
-      document.getElementById("relatorio").disabled = false;
-  }
+    let tipo = document.getElementById("tipo").value;
+    let relatorio = document.getElementById("relatorio");
+    
+    if (tipo === "teorica") {
+        relatorio.disabled = true;
+        relatorio.value = ""; 
+    } else {
+        relatorio.disabled = false;
+    }
 }
+
+window.onload = function() {
+    verificaTipoMateria(); 
+};
 
 function calcular() {
 
