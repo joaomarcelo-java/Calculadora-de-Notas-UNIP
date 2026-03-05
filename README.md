@@ -1,6 +1,4 @@
 # 🎓 Calculadora de Notas UNIP
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen.svg)
 
