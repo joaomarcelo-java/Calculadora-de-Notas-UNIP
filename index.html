@@ -31,6 +31,7 @@
     <div class="calculator">
 
         <h2>Calculadora de Média</h2>
+        <div class="decimal-warning">Para valores decimais, utilize . Ex: 6.7</div>
         <button class="help-link" onclick="irParaGuia()">Como eu cálculo?</button>
         <div class="config">
 
@@ -53,11 +54,11 @@
         </div>
 
         <div class="inputs">
-            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="prova" placeholder="Prova">
-            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="pim" placeholder="PIM">
-            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="ava" placeholder="AVA">
-            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="relatorio" placeholder="Relatório">
-            <input oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" id="exame" placeholder="Exame">
+            <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" inputmode="decimal" id="prova" placeholder="Prova">
+            <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" inputmode="decimal" id="pim" placeholder="PIM">
+            <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" inputmode="decimal" id="ava" placeholder="AVA">
+            <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" inputmode="decimal" id="relatorio" placeholder="Relatório">
+            <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" inputmode="decimal" id="exame" placeholder="Exame">
         </div>
 
         <button onclick="calcular()">Calcular</button>

@@ -106,6 +106,17 @@ main{
 
 /* BOTÃO DO GUIA */
 
+.decimal-warning{
+    background:#ffebee;
+    color:#c62828;
+    padding:8px 12px;
+    border-radius:6px;
+    font-size:13px;
+    text-align:center;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
 .help-link{
     width:100%;
     margin-bottom:15px;
@@ -260,6 +271,10 @@ body.dark .result-value{
 body.dark .result-status{
     background:#3a3a3a;
     color:white;
+}
+body.dark .decimal-warning{
+    background:#7f1d1d;
+    color:#ffcdd2;
 }
 body.dark .guia-item {
     background:#2a2a2a;
